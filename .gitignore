@@ -1,0 +1,8 @@
+/data
+/runs
+!/runs/classify/train17
+/YOLO11-cls
+/sample.ipynb
+/.idea
+/yolo11x-cls.pt
+/yolo11n.pt
