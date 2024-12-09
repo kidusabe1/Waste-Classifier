@@ -3,9 +3,9 @@ from ultralytics import YOLO
 import numpy as np
 
 
-model = YOLO('./runs/classify/train17/weights/best.pt')  # load a custom model
+model = YOLO('/home/202490517/waste-classifier/runs/classify/train17/weights/best.pt')  # load a custom model
 
-results = model('/home/202490517/waste-classifier/data/test/plastic/plastic252.jpg')  # predict on an image
+results = model('/home/202490517/waste-classifier/data/test/paper/paper233.jpg')  # predict on an image
 
 names_dict = results[0].names
 
@@ -15,4 +15,3 @@ print(names_dict)
 print(probs)
 
 print(names_dict[np.argmax(probs)])
-print(results[0].boxes)
