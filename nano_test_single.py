@@ -5,7 +5,7 @@ import numpy as np
 
 model = YOLO('/home/202490517/waste-classifier/runs/classify/train17/weights/best.pt')  # load a custom model
 
-results = model('/home/202490517/waste-classifier/data/test/paper/paper233.jpg')  # predict on an image
+results = model('/home/202490517/waste-classifier/data/test/paper/paper232.jpg')  # predict on an image
 
 names_dict = results[0].names
 
